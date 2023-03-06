@@ -33,11 +33,11 @@
 <script>
 import * as d3 from 'd3'
 import * as h3 from 'h3-js';
-// import districtsMap from '../assets/data/districts.json'
+import { mapState } from 'vuex'
+
 import districtsMap from '../assets/data/states.json'
 export default {
     name: 'h3Map',
-    props: ['observations'],
     data() {
         return {
             h3_zoom: 3,
@@ -53,7 +53,7 @@ export default {
         window.removeEventListener('resize', this.renderMap)
     },
     watch: {
-        observations() {
+        filtered_data() {
             this.renderMap()
         },
         h3_zoom(){
@@ -61,8 +61,9 @@ export default {
         }
     },
     computed: {
+        ...mapState(['filtered_data']),
         points() {
-            return this.observations.map(
+            return this.filtered_data.map(
                 (o) => [o.longitude, o.latitude, o.id],
             )
         },
@@ -197,12 +198,12 @@ export default {
             const area = h3.cellArea(h3Index, 'km2')
             const ids = d.ids
             const tooltip = d3.select('.tooltip')
-            tooltip.html(`Area: ${area.toFixed(2)} km<sup>2</sup><br>Observations: ${ids.length}<br>Species: ${this.getTotalSpecies(ids)}`)
+            tooltip.html(`Area: ${area.toFixed(2)} km<sup>2</sup><br>filtered_data: ${ids.length}<br>Species: ${this.getTotalSpecies(ids)}`)
                 .style('left', `${(event.pageX - 50)}px`)
                 .style('top', `${(event.pageY - 10)}px`)
         },
         getTotalSpecies(ids){
-            return [...new Set(this.observations.filter((o) => ids.includes(o.id)).map((o) => o.taxon_id))].length
+            return [...new Set(this.filtered_data.filter((o) => ids.includes(o.id)).map((o) => o.taxon_id))].length
 
         },
         cellArea(h3Index, unit){
