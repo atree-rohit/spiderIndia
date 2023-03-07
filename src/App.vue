@@ -25,7 +25,7 @@
 <template>
     <div class="main-container">
         <h3>Spider India</h3>
-        <species-list />
+        <species-tree :name="taxa_tree[0].name" :children="taxa_tree[0].children" />
         <div id="map">
             <h3-map />
         </div>
@@ -33,23 +33,25 @@
 </template>
 
 <script lang="ts">
-  import { mapActions } from 'vuex'
+  import { mapActions, mapState } from 'vuex'
   import store from './store/index'
   
   import speciesList from './components/speciesList.vue'
+  import speciesTree from './components/speciesTree.vue'
   import h3Map from './components/h3Map.vue'
   export default {
     name: 'App',
     components: {
       speciesList,
+      speciesTree,
       h3Map
     },
     mounted() {
         console.clear()
       store.dispatch('loadDataFromJson')
     },
-    methods: {
-      // ...mapActions(['loadDataFromJson'])
+    computed: {
+      ...mapState(['taxa_tree'])
     }
   }
 </script>
