@@ -7,10 +7,15 @@ export default createStore({
         taxa_tree: [],
         selected_taxa: "",
         filtered_data: [],
+        family_data: []
     },
     mutations: {
         SET_DATA(state, data) {
             state.inat_data = data
+        },
+
+        SET_FAMILY_DATA(state, data) {
+            state.family_data = data
         },
         
         SET_TAXA_TREE(state) {
@@ -40,9 +45,12 @@ export default createStore({
     },
     actions: {
         async loadDataFromJson({ commit }) {
-            const response = await fetch('/data/all_india_spiders_05Mar2023.json')
-            const data = await response.json()
-            commit('SET_DATA', data)
+            const response_inat = await fetch('/data/all_india_spiders_05Mar2023.json')
+            const data_inat = await response_inat.json()
+            commit('SET_DATA', data_inat)
+            const response_families = await fetch('/data/families.json')
+            const data_families = await response_families.json()
+            commit('SET_FAMILY_DATA', data_families)
             commit('SET_FILTERED_DATA')
             commit('SET_TAXA_TREE')
         },
