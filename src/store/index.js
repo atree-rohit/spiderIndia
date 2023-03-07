@@ -7,7 +7,8 @@ export default createStore({
         taxa_tree: [],
         selected_taxa: "",
         filtered_data: [],
-        family_data: []
+        family_data: [],
+        id_level: "class"
     },
     mutations: {
         SET_DATA(state, data) {
@@ -43,6 +44,13 @@ export default createStore({
                     }
                 )
             }
+            if(state.id_level != "class"){
+                state.filtered_data = state.filtered_data.filter(d => d[`taxon_${state.id_level}`] != "")
+            }
+        },
+
+        SET_ID_LEVEL(state, id_level) {
+            state.id_level = id_level
         }
 
 
@@ -63,6 +71,12 @@ export default createStore({
             commit('SET_SELECTED_TAXA', taxa)
             commit('SET_FILTERED_DATA')
             // commit('SET_TAXA_TREE')
+        },
+        selectIdLevel({ commit }, id_level) {
+            console.log("selectIdLevel",id_level)
+            commit('SET_ID_LEVEL', id_level)
+            commit('SET_FILTERED_DATA')
+            commit('SET_TAXA_TREE')
         }
     },
     modules: {}
@@ -72,9 +86,7 @@ function makeTree(data) {
     let complete_tree = d3.groups(data, d => d["taxon_class"], d=> d["taxon_order"], d=> d["taxon_family"], d=> d["taxon_genus"], d=> d["taxon_species"])
     let x = pruneTree(complete_tree)
     let y = convertArrayToObject(x)
-    let z = addDescendantsCount(y)
-    console.log(x, y, z)
-    
+    let z = addDescendantsCount(y)    
     return z
 }
 function pruneTree(node) {
