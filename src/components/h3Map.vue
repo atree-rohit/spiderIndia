@@ -3,30 +3,20 @@
         background-color: rgb(180,180,200);
     }
     .district-boundary {
-        fill: #fff;
-        stroke: rgba(75,0,0,.5);
-        stroke-width: 1px;
-        /* transition: all .15s; */
-    }
-    .district-boundary:hover {
-        fill: #ffa;
-    }
-    .polygon {
-        stroke: rgba(255,255,255,.5);
-        opacity:.75;
-        /* transition: all .25s; */
-        /* fill: rgba(255,0,0,.25); */
+        fill: #000;
+        stroke: #fff;
+        stroke-width: 0.25px;
     }
     .polygon:hover {
-        fill: rgba(255,255,0,.5);
+        fill: rgba(255,255,0,1);
     }
     input.slider{
         width: 100%;
     }
 </style>
 
+
 <template>
-    <input class="slider" type="range" name="amountRange" min="0" max="8" v-model="h3_zoom" />
     <div id="map-container"></div>
 </template>
 
@@ -34,18 +24,25 @@
 import * as d3 from 'd3'
 import * as h3 from 'h3-js';
 import { mapState } from 'vuex'
+import * as d3Legend from "d3-svg-legend"
+
 
 import districtsMap from '../assets/data/states.json'
 export default {
     name: 'h3Map',
     data() {
         return {
-            h3_zoom: 3,
             svg: null,
+            legend: null,
         }
     },
+    props: {
+        h3_zoom: {
+            type: Number,
+            default: 3,
+        },
+    },
     mounted() {
-        console.clear()
         window.addEventListener('resize', this.renderMap)
         this.renderMap()
     },
@@ -63,18 +60,15 @@ export default {
     computed: {
         ...mapState(['filtered_data']),
         points() {
-            return this.filtered_data.map(
-                (o) => [parseFloat(o.longitude).toFixed(4), parseFloat(o.latitude).toFixed(4), o.id],
-            )
+            return this.filtered_data.map((o) => [parseFloat(o.longitude).toFixed(4), parseFloat(o.latitude).toFixed(4), o.id])
         },
         color() {
             const max = d3.max(this.polygons.map((p) => p.observations))
-            // scaleLinear() scaleSqrt() scalePow() scaleLog()
             let opacity = 1
             if(this.h3_zoom < 3){
-                opacity = 0.75
+                opacity = 0.5
             } else if (this.h3_zoom < 6){
-                opacity = 0.95
+                opacity = 0.75
             }
             return d3.scalePow().domain([0, max]).range([`rgba(255, 100, 100, ${opacity})`, `rgba(100, 255, 100, ${opacity})`])
         },
@@ -100,87 +94,116 @@ export default {
         zoom() {
 			return d3.zoom()
 				.scaleExtent([.5, 250])
-				// .translateExtent([[-0.5 * this.width,-0.75 * this.height],[2.5 * this.width, 2.5 * this.height]])
 				.on('zoom', this.handleZoom)
 		},
     },
     methods: {
+        init_legend() {		
+			return d3Legend.legendColor()
+                .shapeWidth(45)
+                .scale(this.color)
+                .labelFormat(d3.format(".0f"))
+                .orient('horizontal')
+                .labelOffset(-10)
+                .labelAlign("start")
+                .cells(6)
+		},	     
         renderMap() {
-            if (!d3.select('#map-container svg').empty()) {
-                d3.selectAll('#map-container svg').remove()
+            // Extracted functions for repeated tasks
+            const removeExistingSvg = () => {
+                const svg = d3.select('#map-container svg')
+                if (!svg.empty()) {
+                    svg.remove()
+                }
             }
-            const width = parseInt(d3.select('#map').style('width'), 10)
-            const height = parseInt(d3.select('#map').style('height'), 10)
-            const projection = d3.geoMercator().scale(1).translate([0, 0])
-            const path = d3.geoPath().projection(projection)
-            let tooltip = null
-            if (!d3.select('.tooltip').empty()) {
-                tooltip = d3.select('.tooltip')
-            } else {
-                tooltip = d3.select('body')
-                    .append('div')
-                    .attr('class', 'tooltip')
+            const createTooltip = () => {
+                let tooltip = d3.select('.tooltip')
+                if (tooltip.empty()) {
+                    tooltip = d3.select('body')
+                        .append('div')
+                        .attr('class', 'tooltip')
+                        .style('opacity', 0)
+                }
+                return tooltip
+            }
+            const createMouseoverFunction = (tooltip) => {
+                return () => tooltip.transition()
+                    .duration(200)
+                    .style('opacity', 0.9)
+            }
+            const createMousemoveHexagonFunction = (hexTooltip) => {
+                return (event, d) => hexTooltip(event, d)
+            }
+            const createMouseoutFunction = (tooltip) => {
+                return () => tooltip.transition()
+                    .duration(500)
                     .style('opacity', 0)
             }
-            const b = path.bounds(districtsMap)
-            const s = 0.95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height)
-            const t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]
-            projection
-                .scale(s)
-                .translate(t);
-            const mouseover = () => tooltip.transition()
-                .duration(200)
-                .style('opacity', 0.9)
-            const mousemoveDistrict = (event, d) => tooltip.html(`1${d.properties.state}`)
-                .style('left', `${(event.pageX - 50)}px`)
-                .style('top', `${(event.pageY - 10)}px`)
-            const mousemoveHexagon = (event, d) => this.hexTooltip(event, d)
-            const mouseout = () => tooltip.transition()
-                .duration(500)
-                .style('opacity', 0)
-            this.svg = d3.select('#map-container')
+            const createPolygonPath = (d, path) => {
+                return path(d.polygon)
+            }
+            const createPolygonFill = (d, color) => {
+                return color(d.observations)
+            }
+    
+            // Remove existing SVG if it exists
+            removeExistingSvg();
+    
+            // Get width and height of map container
+            const width = parseInt(d3.select('#map').style('width'))
+            const height = parseInt(d3.select('#map').style('height'))
+    
+            // Set up projection and path
+            const projection = d3.geoMercator().fitSize([width, height], districtsMap)
+            const path = d3.geoPath(projection)
+    
+            // Create tooltip and mouse event functions
+            const tooltip = createTooltip()
+            const mouseover = createMouseoverFunction(tooltip)
+            const mousemoveHexagon = createMousemoveHexagonFunction(this.hexTooltip)
+            const mouseout = createMouseoutFunction(tooltip)
+            
+            // Get polygons and color function
+            const polygons = this.polygons
+            const color = this.color
+    
+            // Create SVG element and group
+            const svg = d3.select('#map-container')
                 .append('svg')
                 .attr('preserveAspectRatio', 'xMinYMin meet')
                 .attr('width', width)
                 .attr('height', height)
-            this.svg.append('g')
-                .classed('map-boundary', true)
-                .selectAll('path')
+            const g = svg.append('g')
+    
+            // Draw district boundaries
+            g.selectAll('.district-boundary')
                 .data(districtsMap.features)
                 .enter()
                 .append('path')
                 .attr('d', path)
                 .classed('district-boundary', true)
-                // .attr('title', (d) => d.properties.district)
-                // .on('mouseover', mouseover)
-                // .on('mousemove', (event, d) => mousemoveDistrict(event, d))
-                // .on('mouseout', mouseout)
-            this.svg.append('g')
-                .classed('map-points', true)
-                .selectAll('path')
-                .data(this.polygons)
+    
+            // Draw polygons
+            g.selectAll('.polygon')
+                .data(polygons)
                 .enter()
                 .append('path')
                 .classed('polygon', true)
-                .attr('d', (d) => path(d.polygon))
-                .attr('fill', (d) => this.color(d.observations))
+                .attr('d', d => createPolygonPath(d, path))
+                .attr('fill', d => createPolygonFill(d, color))
                 .on('mouseover', mouseover)
-                .on('mousemove', (event, d) => mousemoveHexagon(event, d))
+                .on('mousemove', mousemoveHexagon)
                 .on('mouseout', mouseout)
-
-            this.svg.call(this.zoom)
+    
+            // Draw legend and enable zoom
+            g.append("g")
+                .attr("transform", `translate(${width * .5}, 50)`)
+                .call(this.init_legend())
+            g.call(this.zoom);
         },
         handleZoom(e){
-			// let text_size = (1/e.transform.k)
-            // this.svg.selectAll('.poly_text')
-            //     .attr('transform', e.transform)
-			// 	.style('font-size', `${text_size}rem`)
-            // console.log(e, e.transform)
-            this.svg.selectAll('path')
+			this.svg.selectAll('path')
                 .attr('transform', e.transform)
-            // this.svg.selectAll('circle')
-            //     .attr('transform', e.transform)
-			// 	.attr("r", text_size)
         },
         hexFeatures(array) {
             return {
@@ -195,7 +218,6 @@ export default {
             }
         },
         hexTooltip(event, d) {
-            // console.log(event, d)
             const h3Index = d.address
             const area = h3.cellArea(h3Index, 'km2')
             const tooltip = d3.select('.tooltip')
