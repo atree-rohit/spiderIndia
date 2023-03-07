@@ -64,11 +64,11 @@ export default {
         ...mapState(['filtered_data']),
         points() {
             return this.filtered_data.map(
-                (o) => [o.longitude, o.latitude, o.id],
+                (o) => [parseFloat(o.longitude).toFixed(4), parseFloat(o.latitude).toFixed(4), o.id],
             )
         },
         color() {
-            const max = d3.max(this.polygons.map((p) => p.ids.length))
+            const max = d3.max(this.polygons.map((p) => p.observations))
             // scaleLinear() scaleSqrt() scalePow() scaleLog()
             let opacity = 1
             if(this.h3_zoom < 3){
@@ -79,15 +79,18 @@ export default {
             return d3.scalePow().domain([0, max]).range([`rgba(255, 100, 100, ${opacity})`, `rgba(100, 255, 100, ${opacity})`])
         },
         polygons() {
-            const op = {}
-            this.points.forEach((point) => {
-                const h3Address = h3.latLngToCell(point[1], point[0], parseInt(this.h3_zoom))
+            let op = {}
+            let points_grouped = d3.rollups(this.points, (v) => v.length ,(d) => `${d[0]},${d[1]}` )
+            console.log(points_grouped)
+            points_grouped.forEach((point) => {
+                let [lat, lng] = point[0].split(',')
+                const h3Address = h3.latLngToCell(lng, lat, parseInt(this.h3_zoom))
                 if (op[h3Address] !== undefined) {
-                    op[h3Address].ids.push(point[2])
+                    op[h3Address].observations += point[1]
                 } else {
                     const h3Geo = this.hexFeatures(h3.cellToBoundary(h3Address, true))
                     op[h3Address] = {
-                        ids: [point[2]],
+                        observations: point[1],
                         polygon: h3Geo.features[0],
                         address: h3Address,
                     }
@@ -161,7 +164,7 @@ export default {
                 .append('path')
                 .classed('polygon', true)
                 .attr('d', (d) => path(d.polygon))
-                .attr('fill', (d) => this.color(d.ids.length))
+                .attr('fill', (d) => this.color(d.observations))
                 .on('mouseover', mouseover)
                 .on('mousemove', (event, d) => mousemoveHexagon(event, d))
                 .on('mouseout', mouseout)
@@ -196,15 +199,10 @@ export default {
             // console.log(event, d)
             const h3Index = d.address
             const area = h3.cellArea(h3Index, 'km2')
-            const ids = d.ids
             const tooltip = d3.select('.tooltip')
-            tooltip.html(`Area: ${area.toFixed(2)} km<sup>2</sup><br>filtered_data: ${ids.length}<br>Species: ${this.getTotalSpecies(ids)}`)
+            tooltip.html(`Area: ${area.toFixed(2)} km<sup>2</sup><br>observations: ${d.observations}`)
                 .style('left', `${(event.pageX - 50)}px`)
                 .style('top', `${(event.pageY - 10)}px`)
-        },
-        getTotalSpecies(ids){
-            return [...new Set(this.filtered_data.filter((o) => ids.includes(o.id)).map((o) => o.taxon_id))].length
-
         },
         cellArea(h3Index, unit){
             h3.cellArea(h3Index, unit)
