@@ -81,7 +81,6 @@ export default {
         polygons() {
             let op = {}
             let points_grouped = d3.rollups(this.points, (v) => v.length ,(d) => `${d[0]},${d[1]}` )
-            console.log(points_grouped)
             points_grouped.forEach((point) => {
                 let [lat, lng] = point[0].split(',')
                 const h3Address = h3.latLngToCell(lng, lat, parseInt(this.h3_zoom))
