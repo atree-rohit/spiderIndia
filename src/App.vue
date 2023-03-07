@@ -1,67 +1,65 @@
 <style>
-    .main-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid red;
-        width: 100%;
+    .footer-nav{
+      display: flex;
+      width: 100%;
+      position:fixed;
+      bottom: 0;
     }
-    h3{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
-        /* background-color: yellow; */
-        padding: 0.5rem;
-        margin: 0;
+    .footer-nav button{
+      flex: 1 1 0;
+      border: 1px dotted #999;
+      text-align: center;
+      margin: auto;
+      padding: 0.5rem;
     }
-    #map{
-        width: 100%;
-        height: 70vh;
-        /* background-color: blue; */
+    .footer-nav button.selected{
+      background-color: #9f9;
     }
-    .species-tree{
-      max-height: 40vh;
-      overflow-y: scroll;
+    .footer-nav button:hover{
+      background-color: #ccc;
+      cursor: pointer;
     }
-
 </style>
 
 <template>
-    <div class="main-container">
-        <h3>Spider India</h3>
-        <species-tree :node="tree_data" class="species-tree"/>
-        <div id="map">
-            <h3-map />
-        </div>
-    </div>
+  <about v-if="selectedNav === 'About'" />
+  <observations v-else-if="selectedNav === 'Observations'" />
+  <div class="footer-nav">
+    <button
+      v-for="nav in navFields"
+      :key="nav"
+      :class="{selected: nav === selectedNav}"
+      @click="selectedNav = nav"
+      v-text="nav"
+    />
+  </div>
 </template>
 
 <script lang="ts">
-  import { mapActions, mapState } from 'vuex'
+  import { defineComponent, ref } from 'vue'
   import store from './store/index'
-  
-  import speciesList from './components/speciesList.vue'
-  import speciesTree from './components/speciesTree.vue'
-  import h3Map from './components/h3Map.vue'
-  export default {
+
+  import about from './components/about.vue'
+  import observations from './components/observations.vue'
+
+  export default defineComponent({
     name: 'App',
     components: {
-      speciesList,
-      speciesTree,
-      h3Map
+      about,
+      observations
+    },
+    setup() {
+      const navFields = ["Home", "About", "Observations", "Users"]
+      const selectedNav = ref("Observations")
+
+      return {
+        navFields,
+        selectedNav
+      }
     },
     mounted() {
-        console.clear()
+      console.clear()
       store.dispatch('loadDataFromJson')
     },
-    computed: {
-      ...mapState(['taxa_tree']),
-      tree_data(){
-        if(this.taxa_tree.length == 0){
-          return {name: "", children: []}
-        }
-        return this.taxa_tree[0]
-      }
-    }
-  }
+  })
 </script>
