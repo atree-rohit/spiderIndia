@@ -23,21 +23,25 @@ export default createStore({
         },
 
         SET_SELECTED_TAXA(state, taxa) {
+            console.log("SET_SELECTED_TAXA", taxa)
             state.selected_taxa = taxa
         },
 
         SET_FILTERED_DATA(state) {
+            console.log("SET_FILTERED_DATA", state.selected_taxa)
             state.filtered_data = []
             if(state.selected_taxa === "") {
                 state.filtered_data = state.inat_data
             } else {
-                state.filtered_data = state.inat_data.filter(d => state.inat_data.filter(taxon => 
-                    (taxon.taxon_class == state.selected_taxa) ||
-                    (taxon.taxon_order == state.selected_taxa) ||
-                    (taxon.taxon_family == state.selected_taxa) ||
-                    (taxon.taxon_genus == state.selected_taxa) ||
-                    (taxon.taxon_species == state.selected_taxa)
-                ))
+                state.filtered_data = state.inat_data.filter(d => 
+                    {
+                        return ((d.taxon_class == state.selected_taxa) ||
+                        (d.taxon_order == state.selected_taxa) ||
+                        (d.taxon_family == state.selected_taxa) ||
+                        (d.taxon_genus == state.selected_taxa) ||
+                        (d.taxon_species == state.selected_taxa))
+                    }
+                )
             }
         }
 
@@ -55,18 +59,23 @@ export default createStore({
             commit('SET_TAXA_TREE')
         },
         selectTaxa({ commit }, taxa) {
+            console.log("selectTaxa",taxa)
             commit('SET_SELECTED_TAXA', taxa)
             commit('SET_FILTERED_DATA')
-            commit('SET_TAXA_TREE')
+            // commit('SET_TAXA_TREE')
         }
     },
     modules: {}
 })
 
 function makeTree(data) {
-    let complete_tree = d3.rollups(data, v => v.length, d => d["taxon_class"], d=> d["taxon_order"], d=> d["taxon_family"], d=> d["taxon_genus"], d=> d["taxon_species"])
-    return convertArrayToObject(pruneTree(complete_tree))
+    let complete_tree = d3.groups(data, d => d["taxon_class"], d=> d["taxon_order"], d=> d["taxon_family"], d=> d["taxon_genus"], d=> d["taxon_species"])
+    let x = pruneTree(complete_tree)
+    let y = convertArrayToObject(x)
+    let z = addDescendantsCount(y)
+    console.log(x, y, z)
     
+    return z
 }
 function pruneTree(node) {
     if (node.children && node.children.length > 0) {
@@ -80,15 +89,53 @@ function pruneTree(node) {
 }
 
 function convertArrayToObject(arr) {
-    const result = []
-    arr.forEach(([name, children]) => {
-      const obj = { name }
-      if (children && children.length) {
-        obj.children = convertArrayToObject(children)
+    const result = [];
+    arr.forEach(([groupKey, groupData]) => {
+      if (Array.isArray(groupData[0])) {
+        // Nested groups, recurse
+        const nested = convertArrayToObject(groupData);
+        const obj = {
+          name: groupKey,
+          children: nested,
+          descendants: nested.reduce((acc, child) => acc + child.descendants + 1, 0),
+          observations: nested.reduce((acc, child) => acc + child.observations, 0)
+        };
+        result.push(obj);
+      } else {
+        // Leaf node
+        // console.log(groupKey, groupData)
+        const obj = {
+          name: groupKey,
+          descendants: 0,
+          observations: groupData.length
+        };
+        result.push(obj);
       }
-      result.push(obj)
-    })
-    return result
+    });
+    return result;
   }
   
   
+  
+  
+
+  function addDescendantsCount(node) {
+    if (!node.children) {
+      // Leaf nodes have no children, 0 descendants, and 0 observations
+      node.descendants = 0;
+      node.observations = 0;
+    } else {
+      // Recursively compute number of descendants and sum of observations for each child
+      node.descendants = 0;
+      node.observations = 0;
+      for (let child of node.children) {
+        addDescendantsCount(child);
+        node.descendants += child.descendants + 1;
+        node.observations += child.observations;
+      }
+    }
+    // Add own observations to sum
+    node.observations += node[0];
+    return node;
+}
+
