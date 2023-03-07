@@ -19,13 +19,17 @@
         height: 70vh;
         /* background-color: blue; */
     }
+    .species-tree{
+      max-height: 40vh;
+      overflow-y: scroll;
+    }
 
 </style>
 
 <template>
     <div class="main-container">
         <h3>Spider India</h3>
-        <species-tree :name="taxa_tree[0].name" :children="taxa_tree[0].children" />
+        <species-tree :node="tree_data" class="species-tree"/>
         <div id="map">
             <h3-map />
         </div>
@@ -51,7 +55,13 @@
       store.dispatch('loadDataFromJson')
     },
     computed: {
-      ...mapState(['taxa_tree'])
+      ...mapState(['taxa_tree']),
+      tree_data(){
+        if(this.taxa_tree.length == 0){
+          return {name: "", children: []}
+        }
+        return this.taxa_tree[0]
+      }
     }
   }
 </script>
