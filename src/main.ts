@@ -1,12 +1,16 @@
 import { createApp } from 'vue'
 import './style.css'
 import store from './store/index'
+
+import Unicon from 'vue-unicons'
+import { uniFolderMedical, uniFolderMinus, uniStar, uniSearch, uniListOl } from 'vue-unicons/dist/icons'
+
 import App from './App.vue'
-import treeNode from './components/treeNode.vue'
 
 const app = createApp(App)
 
-app.component('treeNode', treeNode)
+Unicon.add([uniFolderMedical, uniFolderMinus, uniStar, uniSearch, uniListOl])
+app.use(Unicon)
 
 app.use(store)
 
