@@ -9,11 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@coreui/icons": "^3.0.0",
-    "@coreui/icons-vue": "^2.0.0",
     "d3": "^7.8.2",
     "h3-js": "^4.1.0",
     "vue": "^3.2.45",
+    "vue-unicons": "^3.3.1",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
