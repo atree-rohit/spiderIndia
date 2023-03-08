@@ -77,7 +77,7 @@
           </div>
         </div>
         <div id="map">
-            <h3-map :h3_zoom="parseInt(h3_zoom)"/>
+            <h3-map :h3_zoom="h3_zoom"/>
         </div>
     </div>
 </template>
