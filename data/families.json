@@ -1,0 +1,593 @@
+[
+    {
+        "name": "Thelyphonidae",
+        "description": "Thelyphonids are also known as whip scorpions or vinegaroons. They have elongated bodies, long legs, and a long, whip-like tail that can emit a vinegar-like odor as a defense mechanism. Thelyphonids are found in tropical and subtropical regions worldwide and are nocturnal predators.",
+        "habitat": "Thelyphonids are commonly found in dark, humid habitats such as caves, rock crevices, and under rocks. They are sensitive to light and will retreat to dark areas when exposed to light."
+    },
+    {
+        "name": "Thomisidae",
+        "description": "The Thomisidae family of spiders, also known as crab spiders, are so named because of their crab-like stance and ability to walk sideways or backwards. They are ambush predators that do not spin webs, but instead, wait for prey to come within striking distance. They come in a variety of colors and are found in a range of habitats, including fields, gardens, and forests.",
+        "habitat": "Crab spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, wait for prey to come within striking distance."
+    },
+    {
+        "name": "Salticidae",
+        "description": "The Salticidae family of spiders, also known as jumping spiders, are characterized by their excellent vision, which they use to hunt prey. They have the ability to jump up to 50 times their body length to catch prey. They are found in a variety of habitats, including forests, fields, and gardens.",
+        "habitat": "Jumping spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Araneidae",
+        "description": "The Araneidae family of spiders, also known as orb-weavers, are known for their elaborate circular webs. They are found in a variety of habitats, including forests, fields, and gardens. Some species of Araneidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Orb-weavers are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Buthidae",
+        "description": "The Buthidae family of spiders, also known as scorpions, are characterized by their venomous stinger on the end of their tail. They are found in a variety of habitats, including deserts and tropical regions. Some species of Buthidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Scorpions are found in a variety of habitats, including deserts and tropical regions. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Scorpionidae",
+        "description": "The Scorpionidae family of spiders, also known as true scorpions, are characterized by their venomous stinger on the end of their tail. They are found in a variety of habitats, including deserts and tropical regions. Some species of Scorpionidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "True scorpions are found in a variety of habitats, including deserts and tropical regions. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Sparassidae",
+        "description": "The Sparassidae family of spiders, also known as huntsman spiders, are characterized by their large size and speed. They are active hunters that do not spin webs, but instead, chase down their prey. They are found in a variety of habitats, including forests, fields, and gardens.",
+        "habitat": "Huntsman spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Theraphosidae",
+        "description": "The Theraphosidae family of spiders, also known as tarantulas, are characterized by their large size and hairy bodies. They are found in a variety of habitats, including deserts, forests, and rainforests. Some species of Theraphosidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Tarantulas are found in a variety of habitats, including deserts, forests, and rainforests. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Theridiidae",
+        "description": "The Theridiidae family of spiders, also known as cobweb spiders, are known for their tangled, irregular webs. They are found in a variety of habitats, including forests, fields, and gardens. Some species of Theridiidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Cobweb spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Lycosidae",
+        "description": "The Lycosidae family of spiders, also known as wolf spiders, are active hunters that do not spin webs. They are known for their fast running speed and ability to jump. They are found in a variety of habitats, including forests, fields, and gardens.",
+        "habitat": "Wolf spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Oxyopidae",
+        "description": "The Oxyopidae family of spiders, also known as lynx spiders, are active hunters that do not spin webs. They are characterized by their spiny legs and excellent vision. They are found in a variety of habitats, including forests, fields, and gardens.",
+        "habitat": "Lynx spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Tetragnathidae",
+        "description": "The Tetragnathidae family of spiders, also known as long-jawed orb-weavers, are known for their elongated jaws and thin bodies. They are found in a variety of habitats, including forests, fields, and wetlands. Some species of Tetragnathidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Long-jawed orb-weavers are found in a variety of habitats, including forests, fields, and wetlands. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Mimetidae",
+        "description": "The Mimetidae family of spiders, also known as pirate spiders, are characterized by their ability to mimic the prey of other spiders. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Pirate spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Deinopidae",
+        "description": "The Deinopidae family of spiders, also known as net-casting spiders, are known for their unique method of hunting. They spin a small web that they hold between their front legs, and use it to catch prey that they target with a well-aimed drop from above. They are found in a variety of habitats, including forests and gardens.",
+        "habitat": "Net-casting spiders are found in a variety of habitats, including forests and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Hersiliidae",
+        "description": "The Hersiliidae family of spiders, also known as two-tailed spiders, are characterized by their elongated, tail-like spinnerets. They are found in a variety of habitats, including forests, fields, and deserts. They do not produce venom that is harmful to humans.",
+        "habitat": "Two-tailed spiders are found in a variety of habitats, including forests, fields, and deserts. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Psechridae",
+        "description": "The Psechridae family of spiders, also known as pelican spiders, are characterized by their elongated, beak-like jaws. They are active hunters that do not spin webs, and are found in a variety of habitats, including forests and grasslands. They do not produce venom that is harmful to humans.",
+        "habitat": "Pelican spiders are found in a variety of habitats, including forests and grasslands. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Philodromidae",
+        "description": "The Philodromidae family of spiders, also known as running crab spiders, are characterized by their crab-like stance and ability to run quickly on the ground. They are found in a variety of habitats, including forests, fields, and gardens. Some species of Theridiidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Running crab spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Lycosidae",
+        "description": "The Lycosidae family of spiders, also known as wolf spiders, are active hunters that do not spin webs. They are known for their fast running speed and ability to jump. They are found in a variety of habitats, including forests, fields, and gardens.",
+        "habitat": "Wolf spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+
+    },
+    {
+        "name": "Oxyopidae",
+        "description": "The Oxyopidae family of spiders, also known as lynx spiders, are active hunters that do not spin webs. They are characterized by their spiny legs and excellent vision. They are found in a variety of habitats, including forests, fields, and gardens.",
+        "habitat": "Lynx spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Tetragnathidae",
+        "description": "The Tetragnathidae family of spiders, also known as long-jawed orb-weavers, are known for their elongated jaws and thin bodies. They are found in a variety of habitats, including forests, fields, and wetlands. Some species of Tetragnathidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Long-jawed orb-weavers are found in a variety of habitats, including forests, fields, and wetlands. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Mimetidae",
+        "description": "The Mimetidae family of spiders, also known as pirate spiders, are characterized by their ability to mimic the prey of other spiders. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Pirate spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Deinopidae",
+        "description": "The Deinopidae family of spiders, also known as net-casting spiders, are known for their unique method of hunting. They spin a small web that they hold between their front legs, and use it to catch prey that they target with a well-aimed drop from above. They are found in a variety of habitats, including forests and gardens.",
+        "habitat": "Net-casting spiders are found in a variety of habitats, including forests and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Hersiliidae",
+        "description": "The Hersiliidae family of spiders, also known as two-tailed spiders, are characterized by their elongated, tail-like spinnerets. They are found in a variety of habitats, including forests, fields, and deserts. They do not produce venom that is harmful to humans.",
+        "habitat": "Two-tailed spiders are found in a variety of habitats, including forests, fields, and deserts. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Psechridae",
+        "description": "The Psechridae family of spiders, also known as pelican spiders, are characterized by their elongated, beak-like jaws. They are active hunters that do not spin webs, and are found in a variety of habitats, including forests and grasslands. They do not produce venom that is harmful to humans.",
+        "habitat": "Pelican spiders are found in a variety of habitats, including forests and grasslands. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Philodromidae",
+        "description": "The Philodromidae family of spiders, also known as running crab spiders, are characterized by their crab-like stance and ability to run quickly on the ground. They are found in a variety of habitats,including forests, fields, and gardens. Some species of Philodromidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Running crab spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Pisauridae",
+        "description": "The Pisauridae family of spiders, also known as nursery web spiders, are characterized by their habit of carrying their egg sacs with their chelicerae and pedipalps. They are found in a variety of habitats, including forests, fields, and near water sources. They do not produce venom that is harmful to humans.",
+        "habitat": "Nursery web spiders are found in a variety of habitats, including forests, fields, and near water sources. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Sclerosomatidae",
+        "description": "The Sclerosomatidae family of spiders, also known as the leaping spiders, are characterized by their ability to jump long distances. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Leaping spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Selenopidae",
+        "description": "The Selenopidae family of spiders, also known as flatties, are characterized by their flat bodies and long legs. They are found in a variety of habitats, including forests, fields, and deserts. Some species of Selenopidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Flatties are found in a variety of habitats, including forests, fields, and deserts. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Ctenidae",
+        "description": "The Ctenidae family of spiders, also known as wandering spiders or tropical wolf spiders, are characterized by their long legs and impressive speed. They are found in a variety of habitats, including forests and grasslands. Some species of Ctenidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Wandering spiders are found in a variety of habitats, including forests and grasslands. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Scytodidae",
+        "description": "The Scytodidae family of spiders, also known as spitting spiders or assassin spiders, are characterized by their ability to spray a sticky, glue-like substance at their prey from a distance. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Spitting spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Sicariidae",
+        "description": "The Sicariidae family of spiders, also known as the six-eyed sand spiders, are characterized by their pale yellow color and six eyes arranged in three pairs. They are found in deserts and semi-arid regions. Some species of Sicariidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Six-eyed sand spiders are found in deserts and semi-arid regions. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Atemnidae",
+        "description": "The Atemnidae family of spiders, also known as the flicking spiders, are characterized by their ability to flick silk at their prey. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Flicking spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Uloboridae",
+        "description": "The Uloboridae family of spiders, also known as hackled orb-weavers, are characterized by their lack of venom glands and their habit of constructing non-sticky orb webs. They are found in a variety of habitats, including forests and gardens.",
+        "habitat": "Hackled orb-weavers are found in a variety of habitats, including forests and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Cheiracanthiidae",
+        "description": "The Cheiracanthiidae family of spiders, also known as yellow sac spiders, are characterized by their pale yellow color and their habit of constructing silk sacs in which they hide during the day. They are found in a variety of habitats, including forests, fields, and gardens. Some species of Cheiracanthiidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Yellow sac spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Pholcidae",
+        "description": "The Pholcidae family of spiders, also known as cellar spiders or daddy long-legs, are characterized by their long thin legs and ability to vibrate their webs to confuse predators. They are found in a variety of habitats, including caves, basements, and other dark and humid locations. They do not produce venom that is harmful to humans.",
+        "habitat": "Cellar spiders are found in a variety of habitats, including caves, basements, and other dark and humid locations. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Corinnidae",
+        "description": "Corinnids are also known as sac spiders. They are small to medium-sized spiders and are distributed worldwide. Many species of Corinnids are pale in color and have a distinctive eye arrangement, with two large, forward-facing eyes in the middle of the head.",
+        "habitat": "Corinnids can be found in a variety of habitats such as forests, fields, and grasslands. They are active hunters and can be found on foliage and in leaf litter."
+    },
+    {
+        "name": "Ixodidae",
+        "description": "The Ixodidae family of spiders, also known as the hard ticks, are characterized by their hard exoskeleton and tendency to feed on the blood of mammals, birds, and reptiles. They are found worldwide and are known to transmit several diseases, including Lyme disease and Rocky Mountain spotted fever.",
+        "habitat": "Hard ticks are found worldwide and are known to transmit several diseases, including Lyme disease and Rocky Mountain spotted fever."
+    },
+    {
+        "name": "Oecobiidae",
+        "description": "The Oecobiidae family of spiders, also known as the disc web spiders, are characterized by their flattened bodies and ability to produce disc-shaped webs. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Disc web spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Palpimanidae",
+        "description": "The Palpimanidae family of spiders, also known as the assassin spiders, are characterized by their flattened bodies and long, slender legs. They are found in a variety of habitats, including forests, fields, and deserts. Some species of Palpimanidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Assassin spiders are found in a variety of habitats, including forests, fields, and deserts. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Chaerilidae",
+        "description": "The Chaerilidae family of spiders, also known as the dwarf tarantulas, are characterized by their small size and hairy bodies. They are found in a variety of habitats, including forests, fields, and deserts. Some species of Chaerilidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Dwarf tarantulas are found in a variety of habitats, including forests, fields, and deserts. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Trombidiidae",
+        "description": "The Trombidiidae family of spiders, also known as the red velvet mites, are characterized by their bright red coloration and hairy bodies. They are found in a variety of habitats, including forests, fields, and deserts. They do not produce venom that is harmful to humans.",
+        "habitat": "Red velvet mites are found in a variety of habitats, including forests, fields, and deserts. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Clubionidae",
+        "description": "The Clubionidae family of spiders, also known as sac spiders, are characterized by their flattened bodies and tendency to build silken retreats. They are found in a variety of habitats, including forests, fields, and gardens. Some species of Clubionidae are capable of producing venom that can be harmful to humans.",
+        "habitat": "Sac spiders are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Linyphiidae",
+        "description": "The Linyphiidae family of spiders, also known as the sheet weavers, are characterized by their small size and ability to produce flat, sheet-like webs. They are found in a variety of habitats, including forests, fields, and gardens. They do not produce venom that is harmful to humans.",
+        "habitat": "Sheet weavers are found in a variety of habitats, including forests, fields, and gardens. They are active hunters that do not spin webs, but instead, chase down their prey."
+    },
+    {
+        "name": "Thelyphonidae",
+        "description": "Thelyphonids are also known as whip scorpions or vinegaroons. They have elongated bodies, long legs, and a long, whip-like tail that can emit a vinegar-like odor as a defense mechanism. Thelyphonids are found in tropical and subtropical regions worldwide and are nocturnal predators.",
+        "habitat": "Thelyphonids are commonly found in dark, humid habitats such as caves, rock crevices, and under rocks. They are sensitive to light and will retreat to dark areas when exposed to light."
+    },
+    {
+        "name": "Eresidae",
+        "description": "Eresids are also known as velvet spiders because of the fine hairs covering their bodies. They are small to medium-sized spiders and are distributed worldwide. Some species of Eresids are known to construct funnel-shaped webs.",
+        "habitat": "Eresids are typically found in arid regions and can be found in a variety of habitats such as deserts, semi-arid areas, and steppes."
+    },
+    {
+        "name": "Oonopidae",
+        "description": "Oonopids are also known as goblin spiders because of their small size and unusual appearance. They are some of the smallest spiders in the world, with some species being less than 1mm in length. They are found in tropical and subtropical regions worldwide.",
+        "habitat": "Oonopids can be found in a variety of habitats such as leaf litter, under stones, and in caves. They are often associated with humid microhabitats such as tree canopies and are frequently found in spider webs."
+    },
+    {
+        "name": "Scorpiopidae",
+        "description": "Scorpiopids are also known as short-tailed whip scorpions. They have elongated bodies, long legs, and a long, whip-like tail that lacks a sting. Scorpiopids are found in tropical and subtropical regions worldwide and are nocturnal predators.",
+        "habitat": "Scorpiopids are commonly found in caves, rock crevices, and other dark, moist habitats. They are sensitive to light and will retreat to dark areas when exposed to light."
+    },
+    {
+        "name": "Phalangiidae",
+        "description": "Phalangiids are also known as harvestmen or daddy longlegs. They are not true spiders, but are arachnids closely related to spiders. Phalangiids have long, slender legs and a small body. They are found in all parts of the world and are commonly found in gardens and fields.",
+        "habitat": "Phalangiids can be found in a variety of habitats such as forests, fields, and gardens. They are often found on vegetation and are active at night."
+    },
+    {
+        "name": "Agelenidae",
+        "description": "Agelenids are commonly known as funnel-web spiders due to their unique web construction. They are medium-sized spiders and are distributed worldwide. Many species of agelenids are brown or gray in color.",
+        "habitat": "Agelenids can be found in a variety of habitats such as grasslands, forests, and deserts. They construct funnel-shaped webs in which they wait for prey."
+    },
+    {
+        "name": "Filistatidae",
+        "description": "Filistatids are commonly known as crevice weavers due to their preference for crevices in rocks and buildings as a habitat. They are small to medium-sized spiders and are distributed worldwide.",
+        "habitat": "Filistatids can be found in a variety of habitats such as forests, fields, and grasslands. They construct irregular webs in crevices or other protected areas and wait for prey."
+    },
+    {
+        "name": "Gnaphosidae",
+        "description": "Gnaphosids are commonly known as ground spiders due to their hunting behavior on the ground. They are medium-sized spiders and are distributed worldwide. Many species of gnaphosids have a dark coloration.",
+        "habitat": "Gnaphosids can be found in a variety of habitats such as forests, fields, and grasslands. They are active hunters and can be found on the ground or on low vegetation."
+    },
+    {
+        "name": "Idiopidae",
+        "description": "Idiopids are commonly known as trapdoor spiders due to their unique burrowing and trapping behavior. They are medium to large-sized spiders and are distributed worldwide. Many species of idiopids are brown or gray in color.",
+        "habitat": "Idiopids can be found in a variety of habitats such as forests, grasslands, and deserts. They construct burrows with a trapdoor made of silk and soil, which they use to ambush prey."
+    },
+    {
+        "name": "Parasitidae",
+        "description": "Parasitids are small to medium-sized spiders and are distributed worldwide. They are commonly known as long-legged sac spiders due to their long, slender legs and their habit of building a silk retreat.",
+        "habitat": "Parasitids can be found in a variety of habitats such as forests, fields, and grasslands. They construct a silken retreat in which they rest and lay their eggs."
+    },
+    {
+        "name": "Assamiidae",
+        "description": "Assamiids are commonly known as assassin spiders due to their predatory behavior. They are small to medium-sized spiders and are distributed worldwide. Many species of assamiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Assamiids can be found in a variety of habitats such as forests, fields, and grasslands. They are active hunters and can be found on foliage and in leaf litter."
+    },
+    {
+        "name": "Cheliferidae",
+        "description": "Cheliferids are commonly known as pseudoscorpions due to their small size and their resemblance to scorpions. They are distributed worldwide and are typically found in leaf litter or under rocks.",
+        "habitat": "Cheliferids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Nemesiidae",
+        "description": "Nemesiids are commonly known as whip scorpions due to their whip-like tail. They are small to medium-sized spiders and are distributed worldwide. Many species of nemesiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Nemesiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Zodariidae",
+        "description": "Zodariids are commonly known as zodiac spiders due to their distinctive eye arrangement. They are small to medium-sized spiders and are distributed worldwide. Many species of zodariids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Zodariids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Zodariidae",
+        "description": "Zodariids are commonly known as zodiac spiders due to their distinctive eye arrangement. They are small to medium-sized spiders and are distributed worldwide. Many species of zodariids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Zodariids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Galeodidae",
+        "description": "Galeodids are commonly known as galeodid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of galeodids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Galeodids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Phrynichidae",
+        "description": "Phrynichids are commonly known as phrynichid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of phrynichids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Phrynichids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Rhagodidae",
+        "description": "Rhagodids are commonly known as rhagodid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of rhagodids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Rhagodids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Argasidae",
+        "description": "Argasids are commonly known as hard ticks. They are small to medium-sized spiders and are distributed worldwide. Many species of argasids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Argasids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Dictynidae",
+        "description": "Dictynids are commonly known as dictynid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of dictynids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Dictynids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Erythraeidae",
+        "description": "Erythraeids are commonly known as erythraeid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of erythraeids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Erythraeids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Rugodentidae",
+        "description": "Rugodentids are commonly known as rugodentid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of rugodentids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Rugodentids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Eriophyidae",
+        "description": "Eriophyids are commonly known as eriophyid mites. They are small to medium-sized spiders and are distributed worldwide. Many species of eriophyids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Eriophyids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Hormuridae",
+        "description": "Hormurids are commonly known as hormurid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of hormurids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Hormurids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Trachelidae",
+        "description": "Trachelids are commonly known as trachelid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of trachelids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Trachelids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Penthaleidae",
+        "description": "Penthaleids are commonly known as penthaleid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of penthaleids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Penthaleids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Charinidae",
+        "description": "Charinids are commonly known as charinid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of charinids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Charinids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Arrenuridae",
+        "description": "Arrenurids are commonly known as arrenurid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of arrenurids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Arrenurids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Prodidomidae",
+        "description": "Prodidomids are commonly known as prodidomid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of prodidomids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Prodidomids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Segestriidae",
+        "description": "Segestriids are commonly known as segestriid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of segestriids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Segestriids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Liocranidae",
+        "description": "Liocranids are commonly known as liocranid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of liocranids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Liocranids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Psilodercidae",
+        "description": "Psilodercids are commonly known as psilodercid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of psilodercids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Psilodercids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Ischnothelidae",
+        "description": "Ischnothelids are commonly known as ischnothelid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of ischnothelids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Ischnothelids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Biantidae",
+        "description": "Biantids are commonly known as biantid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of biantids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Biantids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Phrurolithidae",
+        "description": "Phrurolithids are commonly known as phrurolithid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of phrurolithids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Phrurolithids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Atypidae",
+        "description": "Atypids are commonly known as atypid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of atypids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Atypids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Titanoecidae",
+        "description": "Titanoecids are commonly known as titanoecid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of titanoecids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Titanoecids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Stenochilidae",
+        "description": "Stenochilids are commonly known as stenochilid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of stenochilids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Stenochilids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Pimoidae",
+        "description": "Pimoids are commonly known as pimoid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of pimoids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Pimoids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Trochanteriidae",
+        "description": "Trochanteriids are commonly known as trochanteriid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of trochanteriids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Trochanteriids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Barychelidae",
+        "description": "Barychelids are commonly known as barychelid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of barychelids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Barychelids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Anystidae",
+        "description": "Anystids are commonly known as anystid orb weavers. They are medium-sized spiders and are distributed worldwide. Many species of anystids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Anystids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Trombiculidae",
+        "description": "Trombiculids are commonly known as trombiculid mites. They are small mites and are distributed worldwide. Many species of trombiculids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Trombiculids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Tetranychidae",
+        "description": "Tetranychids are commonly known as tetranychid mites. They are small mites and are distributed worldwide. Many species of tetranychids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Tetranychids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Amaurobiidae",
+        "description": "Amaurobiids are commonly known as amaurobiid mites. They are small mites and are distributed worldwide. Many species of amaurobiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Amaurobiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Hubbardiidae",
+        "description": "Hubbardiids are commonly known as hubbardiid mites. They are small mites and are distributed worldwide. Many species of hubbardiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Hubbardiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Solpugidae",
+        "description": "Solpugids are commonly known as camel spiders. They are medium-sized spiders and are distributed worldwide. Many species of solpugids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Solpugids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Podoctidae",
+        "description": "Podoctids are commonly known as podoctid mites. They are small mites and are distributed worldwide. Many species of podoctids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Podoctids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Chernetidae",
+        "description": "Chernetids are commonly known as chernetid mites. They are small mites and are distributed worldwide. Many species of chernetids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Chernetids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Zoropsidae",
+        "description": "Zoropsids are commonly known as zoropsid mites. They are small mites and are distributed worldwide. Many species of zoropsids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Zoropsids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Halonoproctidae",
+        "description": "Halonoproctids are commonly known as halonoproctid mites. They are small mites and are distributed worldwide. Many species of halonoproctids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Halonoproctids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Miturgidae",
+        "description": "Miturgids are commonly known as miturgid mites. They are small mites and are distributed worldwide. Many species of miturgids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Miturgids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Cocceupodidae",
+        "description": "Cocceupodids are commonly known as cocceupodid mites. They are small mites and are distributed worldwide. Many species of cocceupodids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Cocceupodids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Neobisiidae",
+        "description": "Neobisiids are commonly known as neobisiid mites. They are small mites and are distributed worldwide. Many species of neobisiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Neobisiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Theridiosomatidae",
+        "description": "Theridiosomatids are commonly known as theridiosomatid mites. They are small mites and are distributed worldwide. Many species of theridiosomatids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Theridiosomatids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Nesticidae",
+        "description": "Nesticids are commonly known as nesticid mites. They are small mites and are distributed worldwide. Many species of nesticids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Nesticids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Blattisociidae",
+        "description": "Blattisociids are commonly known as blattisociid mites. They are small mites and are distributed worldwide. Many species of blattisociids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Blattisociids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Anyphaenidae",
+        "description": "Anyphaenids are commonly known as anyphaenid mites. They are small mites and are distributed worldwide. Many species of anyphaenids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Anyphaenids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Microtrombidiidae",
+        "description": "Microtrombidiids are commonly known as microtrombidiid mites. They are small mites and are distributed worldwide. Many species of microtrombidiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Microtrombidiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Caeculidae",
+        "description": "Caeculids are commonly known as caeculid mites. They are small mites and are distributed worldwide. Many species of caeculids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Caeculids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Macrothelidae",
+        "description": "Macrothelids are commonly known as macrothelid mites. They are small mites and are distributed worldwide. Many species of macrothelids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Macrothelids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Cheiridiidae",
+        "description": "Cheiridiids are commonly known as cheiridiid mites. They are small mites and are distributed worldwide. Many species of cheiridiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Cheiridiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Eremobatidae",
+        "description": "Eremobatids are commonly known as eremobatid mites. They are small mites and are distributed worldwide. Many species of eremobatids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Eremobatids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Olpiidae",
+        "description": "Olpiids are commonly known as olpiid mites. They are small mites and are distributed worldwide. Many species of olpiids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Olpiids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Neopilionidae",
+        "description": "Neopilionids are commonly known as neopilionid mites. They are small mites and are distributed worldwide. Many species of neopilionids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Neopilionids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Dysderidae",
+        "description": "Dysderids are commonly known as dysderid mites. They are small mites and are distributed worldwide. Many species of dysderids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Dysderids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Geogarypidae",
+        "description": "Geogarypids are commonly known as geogarypid mites. They are small mites and are distributed worldwide. Many species of geogarypids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Geogarypids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Euctenizidae",
+        "description": "Euctenizids are commonly known as euctenizid mites. They are small mites and are distributed worldwide. Many species of euctenizids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Euctenizids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Antrodiaetidae",
+        "description": "Antrodiaetids are commonly known as antrodiaetid mites. They are small mites and are distributed worldwide. Many species of antrodiaetids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Antrodiaetids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Urodacidae",
+        "description": "Urodacids are commonly known as urodacid mites. They are small mites and are distributed worldwide. Many species of urodacids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Urodacids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Desidae",
+        "description": "Desids are commonly known as desid mites. They are small mites and are distributed worldwide. Many species of desids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Desids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Anapidae",
+        "description": "Anapids are commonly known as anapid mites. They are small mites and are distributed worldwide. Many species of anapids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Anapids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Paranonychidae",
+        "description": "Paranonychids are commonly known as paranonychid mites. They are small mites and are distributed worldwide. Many species of paranonychids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Paranonychids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Lamponidae",
+        "description": "Lamponids are commonly known as lamponid mites. They are small mites and are distributed worldwide. Many species of lamponids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Lamponids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    },
+    {
+        "name": "Vaejovidae",
+        "description": "Vaejovids are commonly known as vaejovid mites. They are small mites and are distributed worldwide. Many species of vaejovids have a flattened body shape and a distinctive eye arrangement.",
+        "habitat": "Vaejovids can be found in a variety of habitats such as forests, fields, and grasslands. They are predators and feed on other small arthropods."
+    }
+]
