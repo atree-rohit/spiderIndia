@@ -57,7 +57,7 @@
         width="20"
         height="20"
         hover-fill="#ff0"
-        v-if="children.length == 0"
+        v-if="children== undefined || children.length == 0"
       />
       <unicon
         name="folder-medical"

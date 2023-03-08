@@ -23,6 +23,7 @@
 
 <template>
   <about v-if="selectedNav === 'About'" />
+  <genera v-if="selectedNav === 'Genera'" />
   <observations v-else-if="selectedNav === 'Observations'" />
   <div class="footer-nav">
     <button
@@ -40,24 +41,26 @@
   import store from './store/index'
 
   import about from './components/about.vue'
+  import genera from './components/genera.vue'
   import observations from './components/observations.vue'
 
   export default defineComponent({
     name: 'App',
     components: {
       about,
+      genera,
       observations
     },
     setup() {
-      const navFields = ["Home", "About", "Observations", "Users"]
-      const selectedNav = ref("Observations")
+      const navFields = ["Home", "About", "Genera", "Observations", "Users"]
+      const selectedNav = ref("Genera")
 
       return {
         navFields,
         selectedNav
       }
     },
-    mounted() {
+    created() {
       console.clear()
       store.dispatch('loadDataFromJson')
     },

@@ -168,12 +168,12 @@ export default {
             const color = this.color
     
             // Create SVG element and group
-            const svg = d3.select('#map-container')
+            this.svg = d3.select('#map-container')
                 .append('svg')
                 .attr('preserveAspectRatio', 'xMinYMin meet')
                 .attr('width', width)
                 .attr('height', height)
-            const g = svg.append('g')
+            const g = this.svg.append('g')
     
             // Draw district boundaries
             g.selectAll('.district-boundary')
